@@ -44,13 +44,15 @@
       </nav>
     </header>
     
-    <main class="main-index">
+    <main class="main-container main-index">
+      <div class="page-container">
+        <div class="gallery_container">
       <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
       
       <section class="gallery_1">
        <h2 class="visually-hidden">Фотогалерея</h2>
       
-       <div>
+       <div class="gallery_box">
          <button class="slider-button slider-prev" type="button">
            <span class="visually-hidden">Предыдущее фото</span>
          </button>
@@ -204,6 +206,7 @@
          </ul>
        </div>
        </section>
+      </div>
 
     
     <section class="catalog">
@@ -252,7 +255,8 @@
 
     <section class="button-conditions">
       <h2 class="visually-hidden">Условия интернет-магазина</h2>
-      <div class="grey-box">
+      <div class="grey-box"></div>
+      <div class="container_box">
       <ul class="button">
         <li class="button-list">
           <a class="button button-all" href="#">Доставка</a>
@@ -336,8 +340,8 @@
       <p class="text">Еженедельный дайджест с обзорами новинок, 
         длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
       </div>
-      <div>
-        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="appointment-form">
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <input type="text" id="appointment-mail" name="appointment-mail" placeholder="Ваш e-mail">
            <button class="button" type="submit">Подписаться</button>
         </form>
@@ -345,19 +349,21 @@
           height="14" alt="Разработчик">Это бесплатно</p>
         </div>
     </section>
+  </div>
     </main>
 
     <footer class="page-footer">
+      <div class="page-footer-container">
       <div class="page_footer_item">
       <img class="logo-footer" src="image/main-page/logo-footer.svg" alt="Логотип интернет-магазин девайсов" width="145" height="36">
     </div>
       
       <div class="footer-adress">
-      <p class="address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      <p class="address-text">Санкт-Петербург, набережная<br> реки Карповки, 5, литера П.</p>
       
       <div class="footer-nav">
         <h2 class="visually-hidden">Полезная информация интернет-магазин</h2>
-         <ul class="footer-nav-list">
+         <ul class="footer-nav-ul-list">
             <li class="footer-nav-list">
                <a class="footer-nav-link" href="delivery.html">Доставка</a>
             </li>
@@ -370,14 +376,14 @@
        </ul>
 
       </div>
-      <p><a class="number-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+      <p class="number"><a class="number-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
       </p>
       </div>
         
     <div class="footer-social">
       <div class="line"></div>
 
-         <ul class="footer-social-list">
+         <ul class="footer-social-ul-list">
             <li class="footer-social-list">
               <a class="button" href="https://www.facebook.com/htmlacademy"><img src="image/main-page/facebook.png" width="40" 
                 height="40" alt="Фейсбук">
@@ -394,10 +400,11 @@
               </a>
             </li>
           </ul>
-          <div><img class="developer-logo" src="image/main-page/developer-logo.svg" alt="Разработчик" width="115" 
+          <div class="footer_logo"><img class="developer-logo" src="image/main-page/developer-logo.svg" alt="Разработчик" width="115" 
             height="33">
           </div>
     </div>
+  </div>
     </footer>
   </body>
 </html>
