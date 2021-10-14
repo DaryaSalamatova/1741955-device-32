@@ -504,6 +504,72 @@ justify-content: space-between;
    color: #000000;
  }
 
+ .catalog-products {
+    display: flex;
+ }
+
+ .name_filter {
+   display: flex;
+   flex-direction: column;
+   width: 468px;
+   background: #DCDCDC;
+   padding-left: 200px;
+   padding-right: 32px;
+   padding-top: 25px;
+   padding-bottom: 25px;;
+   box-sizing: border-box;
+   text-align: left; 
+ }
+
+.catalog-filter {
+   display: flex;
+   flex-direction: column;
+   width: 468px;
+   background:  #FFFFFF;
+   padding-left: 200px;
+   padding-right: 32px;
+   padding-top: 25px;
+   padding-bottom: 25px;
+   box-sizing: border-box;
+   text-align: left; 
+}
+
+.sorting-type {
+   display: flex;
+   justify-content: space-between;
+   width: 972px;
+   padding-left: 72px;
+   padding-top: 25px;
+   padding-right: 30px;
+   padding-bottom: 25px;
+   box-sizing: border-box;
+}
+
+.sorting-title {
+  flex-grow: 1;
+}
+
+.select-control {
+  flex-grow: 3;
+  width: 163px;
+  height: 19px;
+}
+
+.arrow {
+   display: flex;
+   flex-direction: row;
+  flex-grow: 1;
+  width: 42px;
+  height: 10px;
+}
+
+.product-card {
+   display: flex;
+   box-sizing: border-box;
+   flex-direction: column;
+   width: 972px;
+}
+
  a.breadcumbs-link {
    font-family: "Rubik", "sans serif";
    font-style: normal;
