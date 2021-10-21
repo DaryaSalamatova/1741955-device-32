@@ -30,6 +30,11 @@
     font-display: swap;
  }
 
+ .wrapper {
+   width: 80%;
+   margin: 0 auto;
+ }
+
  html {
    height: 100%;
  }
@@ -52,19 +57,21 @@
 
  .logo {
     display: block;
+    padding-left: 35px;
  }
 
  .page-header {
-     margin: 0 auto;
+   margin-top: 42px;
      background-color: #FFE17F;
-     width: 1160px;
+     padding: 60px;
  }
 
  .navigation {
-    display: flex;
-    flex-direction: column;
-    width: 1160px;
-    margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   margin: 0 auto;
+   padding-top: 47px;
  }
  
  .navigation-item {
@@ -75,7 +82,7 @@
  .navigation-user {
     display: flex;
     justify-content: space-between;
-    width: 1075px;
+
  }
 
  .navigation-user li {
@@ -90,10 +97,16 @@
    flex-grow: 2;
  }
 
+ .navigation-item-basket {
+   display: flex;
+   justify-content: flex-end;
+   align-self: center;
+ }
+
  .navigation-list {
     display: flex;
     justify-content: space-between;
-   width: 1041px;
+   
  }
 
  .navigation-list li {
@@ -133,13 +146,11 @@
  }
 
  .gallery_container {
-   width: 1161px;
-   margin: 0 auto;
+   width: 100%
  }
 
  .page-container {
-    width: 1440px;
-    margin: 0 auto;
+    width: 100%;
  }
 
  .gallery_1 {
@@ -195,8 +206,8 @@
   }
 
 .catalog {
-   width: 1160px;
-   margin: 0 auto;
+   width: 100%;
+   margin: 70px 0;
 }
 
 li {
@@ -206,6 +217,8 @@ li {
 .catalog-list {
    display: flex;
    justify-content: space-between;
+   flex-wrap: wrap;
+   padding: 0;
 }
 
 .catalog-item {
@@ -236,13 +249,20 @@ li {
   }
 
   .visually-hidden{
-     display: none;
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     padding: 0;
+     border: 0;
+     clip: rect(0 0 0 0);
+     overflow: hidden;
   }
 
 .button-conditions {
    display: flex;
-   width: 1440px;
-   margin: 0 auto;
+   width: 100%;
+   margin: 0;
   }
 
 .grey-box {
@@ -253,14 +273,15 @@ li {
 }
 
 .container_box {
-   width: 1094px;
-   margin: 0 auto; 
+display: flex;
+justify-content: space-between;
 }
 
 .information {
    display: flex;
-   width: 1160px;
-   margin: 0 auto;
+   width: 100%;
+   margin: 0;
+   padding: 90px 0;
    flex-direction: column;
 }
 
@@ -282,12 +303,18 @@ li {
    text-transform: uppercase;
   }
 
+.delivery {
+   display: flex;
+   flex-wrap: wrap;
+}
+
   .delivery-title {
    font-family: "Raleway", "sans serif";
    font-weight: 800;
    font-size: 50px;
    line-height: 50px;
    color: #000000;
+   margin-top: 0;
   }
 
   .delivery_paint {
@@ -309,12 +336,19 @@ li {
    color: #000000;
 }
 
+.banner-description {
+   max-width: 497px;
+}
+
 .about_and_contact {
 display: flex;
 justify-content: space-between;
 }
 
 .about {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
    width: 497px;
    text-align: left;
 }
@@ -328,6 +362,9 @@ justify-content: space-between;
 }
 
 .contacts {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
    width: 497px;
    text-align: left;
 }
@@ -336,9 +373,12 @@ justify-content: space-between;
    font-family: "Rubik", "sans serif";
    font-weight: 700;
    font-size: 18px;
-   line-height: 20px;
    color: #000000;
+   list-style: unset;
+}
 
+.transport-company-name::marker{
+   color: #FFE17F;
 }
 
 .contacts-title {
@@ -374,9 +414,9 @@ a.contacts-phone {
 .appointment {
    display: flex;
    flex-direction: column;
-   width: 1440px;
+   width: 100%;
    background: #F0F0F0;
-   padding:30px 140px 125px;
+   padding:86px 0 125px;
    box-sizing: border-box;
 }
 
@@ -392,10 +432,12 @@ justify-content: space-between;
    line-height: 50px;
    color: #000000;
    width: 50%;
+   margin-top: 0;
 }
 
 .mail_text .text {
    width: 50%;
+   margin-top: 0;
 }
 
 .appointment-form {
@@ -407,22 +449,26 @@ justify-content: space-between;
    font-family: "Raleway", "sans serif";
    font-weight: 800;
    font-size: 18px;
-   line-height: 21px;
    text-align: center;
    text-transform: uppercase;
    color: #000000;
+   padding: 0;    
+   width: 30%;
+   margin: 0%;
 }
 
 .page-footer-container {
    display: flex;
    flex-direction: column;
-   width: 1440px;
+   width: 100%;
    margin: 0 auto;
 }
 
  .page-footer {
      color: #FFFFFF;
      background-color: #444444;
+     padding: 62px 0;
+
  }
 
  .footer-adress {
@@ -496,16 +542,27 @@ justify-content: space-between;
     margin-left: 25px;
  }
 
+.inner-header {
+   margin: 0;
+   padding-left: 40px;
+}
+
  .inner-header-title {
    font-family: "Raleway", "sans serif";
    font-weight: 800;
    font-size: 50px;
    line-height: 50px;
    color: #000000;
+   margin-top: 0;
+   margin-bottom: 15px;
  }
 
  .catalog-products {
     display: flex;
+ }
+
+ .main-inner {
+    padding-top: 40px;
  }
 
  .name_filter {
@@ -533,6 +590,7 @@ justify-content: space-between;
    box-sizing: border-box;
    text-align: left; 
 }
+
 
 .sorting-type {
    display: flex;
@@ -570,6 +628,18 @@ justify-content: space-between;
    width: 972px;
 }
 
+.product-list {
+   margin: 0;
+   padding: 0;
+}
+
+.breadcumbs {
+   display: flex;
+   margin: 0;
+   padding: 0;
+   padding-bottom: 40px;
+}
+
  a.breadcumbs-link {
    font-family: "Rubik", "sans serif";
    font-style: normal;
@@ -578,6 +648,7 @@ justify-content: space-between;
    line-height: 19px;
    color: #000000;
    text-decoration: none;
+   margin-right: 38px;
  }
 
  .inner-filter {
@@ -594,8 +665,7 @@ justify-content: space-between;
    background: #DCDCDC;
    width: 468px;
    height: 70px;
-   left: 0px;
-   top: 405px;
+   padding: 0;
  }
 
  .catalog-filter {
@@ -615,6 +685,10 @@ justify-content: space-between;
    line-height: 18px;
    color: #000000;
  }
+
+.arrow_top {
+  margin: 0;
+}
 
  .color-label {
    font-size: 16px;
@@ -663,6 +737,12 @@ line-height: 21px;
 text-align: right;
 }
 
+.pagination {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
 .pagination-show-more {
    font-family: "Raleway", "sans serif";
    font-weight: 800;
@@ -686,8 +766,16 @@ text-transform: uppercase;
 color: #000000;
 }
 
+.pagination_catalog {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 0;
+   padding: 0;
+}
+
 a.pagination-prev {
-   text-decoration: none; 
+   text-decoration: none;
 }
 
 a.pagination-next {
@@ -705,4 +793,8 @@ a.pagination-next {
 
 a.pagination-link {
    text-decoration: none;
+}
+
+.pagination-item {
+   margin-right: 25px;
 }
