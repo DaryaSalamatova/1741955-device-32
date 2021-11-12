@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="style/style.css"> 
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://use.fontawesome.com/d8fac51162.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -11,22 +12,26 @@
       <img class="logo" src="image/main-page/logo.svg" alt="Логотип интернет-магазин девайсов" width="145" height="36">
       <nav class="navigation">
         <ul class="navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"><img src="image/main-page/search.svg" width="16" 
+          <li class="navigation-item find-open">
+            <form>
+              <label>
+              <img src="image/main-page/search.svg" width="16" 
               height="16" alt="поиск">
-              <span class="seach-site">Поиск по сайту</span>
-            </a>
+              <input class="navigation-search" type="text" placeholder="Поиск по сайту">
+            </label>
+              <button class="find" type="submit">Найти</button>
+            </form>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><img src="image/main-page/enter.svg" width="13" 
+            <a class="navigation-link-1" href="#"><img src="image/main-page/enter.svg" width="13" 
               height="12" alt="вход в личный кабинет">Войти</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><img src="image/main-page/compare.svg" width="10" 
+            <a class="navigation-link-1" href="#"><img src="image/main-page/compare.svg" width="10" 
               height="12" alt="сравнить товары">Сравнить</a>
           </li>
           <li class="navigation-item-basket">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link-1" href="#">
               <span class="around">2</span>
               <img src="image/main-page/basket.svg" width="16" 
               height="14" alt="корзина с товарами">Корзина</a>
@@ -35,18 +40,19 @@
         <ul class="navigation-list">
           <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">
-            Каталог товаров
+           <span> Каталог товаров</span>
             <span class="plus">+</span>
+            <span class="minus">−</span>
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="delivery.html">Доставка</a>
+          <a class="navigation-link top-list" href="delivery.html">Доставка</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="guarantee.html">Гарантия</a>
+          <a class="navigation-link top-list" href="guarantee.html">Гарантия</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="contacts.html">Контакты</a>
+          <a class="navigation-link top-list" href="contacts.html">Контакты</a>
         </li>
         </ul>
       </nav>
@@ -82,8 +88,9 @@
         </p>
         <div class="point-slider">
           <div class="line_yellow">
-        <a class="button button-all" href="#">Подробнее</a>
-        <span class="line_1"></span>
+            <a href="#" class="linking">
+        <p class="button button-all">Подробнее</p>
+        <span class="line_1"></span></a>
       </div>
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
@@ -137,7 +144,11 @@
          <p class="banner-desription">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.
          </p>
          <div class="point-slider">
-         <a class="button button-all" href="#">Подробнее</a>
+          <div class="line_yellow">
+            <a href="#" class="linking">
+        <p class="button button-all">Подробнее</p>
+        <span class="line_1"></span></a>
+      </div>
  
          <ol class="slider-pagination">
            <li class="slider-pagination-item">
@@ -188,8 +199,11 @@
           Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
          </p>
          <div class="point-slider">
-         <a class="button button-all" href="#">Подробнее</a>
- 
+          <div class="line_yellow">
+            <a href="#" class="linking">
+        <p class="button button-all">Подробнее</p>
+        <span class="line_1"></span></a>
+      </div>
          <ol class="slider-pagination">
            <li class="slider-pagination-item">
              <button class="slider-pagination-button slider-pagination-button-curent" type="button">
@@ -230,42 +244,54 @@
       <h2 class="visually-hidden">Каталог девайсов</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
+          <a class="all-catalog-item" href="#">
           <p class="catalog_icon"><img src="image/main-page/glas.svg" width="97" 
           height="55" alt="селфи-палка"> 
         </p>
           <h3 class="catalog-title">Виртуальная
             реальность</h3>
+          </a>
         </li>
         <li class="catalog-item">
+          <a class="all-catalog-item" href="#">
           <p class="catalog_icon"><img src="image/main-page/phone.svg" width="86" 
           height="117" alt="селфи-палка">
         </p>
           <h3 class="catalog-title">Моноподы 
             для селфи</h3>
+          </a>
         </li>
         <li class="catalog-item">
+          <a class="all-catalog-item" href="#">
           <p class="catalog_icon"><img src="image/main-page/video.svg" width="71" 
           height="87" alt="видео камера">
         </p>
           <h3 class="catalog-title">Экшн-камеры</h3>
+        </a>
         </li>
         <li class="catalog-item">
+          <a class="all-catalog-item" href="#">
           <p class="catalog_icon"><img src="image/main-page/watch.svg" width="107" 
           height="65" alt="браслет для фитнеса">
         </p>
           <h3 class="catalog-title">Фитнес-браслеты</h3>
+        </a>
         </li>
         <li class="catalog-item">
+          <a class="all-catalog-item" href="#">
           <p class="catalog_icon"><img src="image/main-page/smart-watch.svg" width="56" 
           height="98" alt="смарт-часы">
         </p>
           <h3 class="catalog-title">Умные часы</h3>
+        </a>
         </li>
         <li class="catalog-item">
+          <a class="all-catalog-item" href="#">
           <p class="catalog_icon"><img src="image/main-page/frame-copter.svg" width="132" 
           height="69" alt="коптер">
         </p>
           <h3 class="catalog-title">Квадрокоптеры</h3>
+        </a>
         </li>
       </ul>
     </section>
@@ -278,27 +304,35 @@
       <div class="wrapper">
       <h2 class="visually-hidden">Условия интернет-магазина</h2>
       <div class="container_box">
+        <div class="all-limit">
       <ul class="button tabs-list">
-        <li class="button-list left">
-          <a class="button button-all active" href="#">
-            Доставка
-            <span class="limit"></span>
+        <li class="button-list left active">
+          <div class="condition-list-item">
+          <a class="button button-all" href="#">
+           <span> Доставка</span>
+            <span class="line_2"></span>
           </a>
+        </div>
         </li> 
         <li class="button-list left">
+          <div class="condition-list-item">
           <a class="button button-all" href="#">
-            Гарантия
+            <span>Гарантия</span>
             <span class="line_2"></span>
           </a>
+          </div>
         </li>
         <li class="button-list left">
+          <div class="condition-list-item">
           <a class="button button-all" href="#">
-            Кредит
+          <span>Кредит</span>
             <span class="line_2"></span>
           </a>
+          </div>
         </li>
       </ul>
       <span class="limit"></span>
+    </div>
       <div class="delivery">
         <div class="info-text">
           <h2 class="delivery-title">Доставка</h2>
@@ -370,9 +404,11 @@
               ТоксБерри
             </li>
           </ul>
+    <div class="put-line-3">
           <a class="button button-all" href="#">Подробнее о нас
             <span class="line_3"></span>
           </a>
+        </div>
     </div>
 
     <div class="contacts">
@@ -396,9 +432,11 @@
             <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00
             </li>
           </ul>
+          <div class="put-line-3">
           <a class="button button-all" href="#">Напишите нам
             <span class="line_3"></span>
           </a>
+        </div>
     </div>
   </div>
     </section>
@@ -431,7 +469,7 @@
       <div class="wrapper">
       <div class="page-footer-container">
       <div class="page_footer_item">
-      <img class="logo-footer" src="image/main-page/logo-footer.svg" alt="Логотип интернет-магазин девайсов" width="145" height="36">
+      <img class="logo-footer" src="image/main-page/my-logo-footer.png" alt="Логотип интернет-магазин девайсов" width="145" height="36">
     </div>
       
       <div class="footer-adress">
@@ -464,24 +502,27 @@
 
          <ul class="footer-social-ul-list">
             <li class="footer-social-list">
-              <a class="button" href="https://www.facebook.com/htmlacademy"><img src="image/main-page/facebook.png" width="40" 
-                height="40" alt="Фейсбук">
+              <a class="button" href="https://www.facebook.com/htmlacademy">
+                <i class="fa fa-fw fa-facebook" aria-hidden="true"></i>
               </a>
             </li>
             <li class="footer-social-list">
-              <a class="button" href="https://www.instagram.com/htmlacademy/"><img src="image/main-page/instagram.png" width="40" 
-                height="40" alt="Инстаграм">
+              <a class="button" href="https://www.instagram.com/htmlacademy/">
+                <i class="fa fa-fw fa-instagram" aria-hidden="true"></i>
               </a>
             </li>
             <li class="footer-social-list">
-              <a class="button" href="https://twitter.com/htmlacademy_ru"><img src="image/main-page/twitter.png" width="40" 
-                height="40" alt="Твиттер">
+              <a class="button" href="https://twitter.com/htmlacademy_ru">
+                <i class="fa fa-fw fa-twitter" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
-          <div class="footer_logo"><img class="developer-logo" src="image/main-page/developer-logo.svg" alt="Разработчик" width="115" 
+          <a class="footer_logo" href="https://htmlacademy.ru/">
+            <span class="logo-page">
+            <img class="developer-logo" src="image/main-page/logo-footer.png" alt="Разработчик" width="115" 
             height="33">
-          </div>
+          </span>
+        </a>
     </div>
   </div>
 </div>

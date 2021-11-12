@@ -4,32 +4,38 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://use.fontawesome.com/d8fac51162.js"></script>
   </head>
   <body>
-
     <div class="wrapper">
-      <header class="page-header">
-        <img class="logo" src="image/main-page/logo.svg" alt="Логотип интернет-магазин девайсов" width="145" height="36">
-        <nav class="navigation">
-          <ul class="navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#"><img src="image/main-page/search.svg" width="16" 
-                height="16" alt="поиск">Поиск по сайту</a>
-            </li>
+    <header class="page-header">
+      <img class="logo" src="image/main-page/logo.svg" alt="Логотип интернет-магазин девайсов" width="145" height="36">
+      <nav class="navigation">
+        <ul class="navigation-user">
+          <li class="navigation-item find-open">
+            <form>
+              <label>
+              <img src="image/main-page/search.svg" width="16" 
+              height="16" alt="поиск">
+              <input class="navigation-search" type="text" placeholder="Поиск по сайту">
+            </label>
+              <button class="find" type="submit">Найти</button>
+            </form>
+          </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#"><img src="image/main-page/enter.svg" width="13" 
                 height="12" alt="вход в личный кабинет">Коля Петухов</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#"><img src="image/main-page/enter.svg" width="13" 
-                height="12" alt="вход в личный кабинет">Выйти</a>
+              <a class="navigation-link" href="#">
+                <span class="seach-site">Выйти</span></a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#"><img src="image/main-page/compare.svg" width="10" 
+              <a class="navigation-link-1" href="#"><img src="image/main-page/compare.svg" width="10" 
                 height="12" alt="сравнить товары">Сравнить</a>
             </li>
             <li class="navigation-item-basket">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link-1" href="#">
                 <span class="around">2</span>
                 <img src="image/main-page/basket.svg" width="16" 
                 height="14" alt="корзина с товарами">Корзина</a>
@@ -37,16 +43,20 @@
           </ul>
           <ul class="navigation-list">
             <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+            <a class="navigation-link" href="catalog.html">
+             <span> Каталог товаров</span>
+              <span class="plus">+</span>
+              <span class="minus">−</span>
+            </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="delivery.html">Доставка</a>
+            <a class="navigation-link top-list" href="delivery.html">Доставка</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="guarantee.html">Гарантия</a>
+            <a class="navigation-link top-list" href="guarantee.html">Гарантия</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="contacts.html">Контакты</a>
+            <a class="navigation-link top-list" href="contacts.html">Контакты</a>
           </li>
           </ul>
         </nav>
@@ -81,30 +91,38 @@
               <p class="inner-filter">фильтр:</p>
             </div>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-                <fieldset class="catalod-filter-group">
+              <fieldset class="catalod-filter-group">
+                <span class="filter-line"></span>
                     <legend class="catalod-filter-title">Стоимость</legend>
+                    <div class="toddler">
                      <button class="range-toggle toggle-min" type="button">
                          <span class="visually-hidden">Изменить минимальную цену</span>
                      </button>
                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену</span>
                     </button>
-
-                    <label class="catalod-filter-label">от
-                       <input class="catalod-filter-input" type="number" name="min-price">
+                    <span class="catalog-limit"><span></span></span>
+                  </div>
+                  <div class="toddler">
+                    <label class="catalod-filter-label">
+                       <span>от</span>
+                       <span>0</span>
                     </label>
 
-                    <label class="catalod-filter-label">до
-                        <input class="catalod-filter-input" type="number" name="max-price">
+                    <label class="catalod-filter-label">
+                      <span>до</span>
+                      <span>5000</span>
                      </label>
+                     </div>
                 </fieldset>
-
+                
                 <fieldset class="catalod-filter-group">
+                  <span class="filter-line-2"></span>
                     <legend class="catalod-filter-title">Цвет</legend>
                      <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
                        <label class="color">
-                          <input class="visually-hidden color-input" type="checkbox" name="black" checked>
+                          <input class="visually color-input" type="checkbox" name="black" checked>
                             <span class="color-variete"></span>
                                <span class="color-label">Черный</span>
                        </label>
@@ -112,7 +130,7 @@
 
                       <li class="catalog-filter-item">
                         <label class="color">
-                           <input class="visually-hidden color-input" type="checkbox" name="white" checked>
+                           <input class="visually color-input" type="checkbox" name="white" checked>
                              <span class="color-variete"></span>
                                 <span class="color-label">Белый</span>
                         </label>
@@ -120,7 +138,7 @@
 
                        <li class="catalog-filter-item">
                         <label class="color">
-                           <input class="visually-hidden color-input" type="checkbox" name="blue">
+                           <input class="visually color-input" type="checkbox" name="blue">
                              <span class="color-variete"></span>
                                 <span class="color-label">Синий</span>
                         </label>
@@ -128,7 +146,7 @@
 
                        <li class="catalog-filter-item">
                         <label class="color">
-                           <input class="visually-hidden color-input" type="checkbox" name="red">
+                           <input class="visually color-input" type="checkbox" name="red">
                              <span class="color-variete"></span>
                                 <span class="color-label">Красный</span>
                         </label>
@@ -136,7 +154,7 @@
 
                        <li class="catalog-filter-item">
                         <label class="color">
-                           <input class="visually-hidden color-input" type="checkbox" name="pink">
+                           <input class="visually color-input" type="checkbox" name="pink">
                              <span class="color-variete"></span>
                                 <span class="color-label">Розовый</span>
                         </label>
@@ -145,11 +163,12 @@
                 </fieldset>
 
                 <fieldset class="catalod-filter-group">
+                  <span class="filter-line-3"></span>
                     <legend class="catalod-filter-title">Bluetooth</legend>
                     <ul class="catalog-filter-list"> 
                       <li class="catalog-filter-item">
                         <label class="function">
-                           <input class="visually-hidden function-input" type="radio" name="product-group" value="yes" checked>
+                           <input class="visually function-input" type="radio" name="product-group" value="yes" checked>
                              <span class="function-variete"></span>
                                 <span class="function-label">Есть</span>
                         </label>
@@ -157,7 +176,7 @@
 
                       <li class="catalog-filter-item">
                         <label class="function">
-                           <input class="visually-hidden function-input" type="radio" name="product-group" value="no">
+                           <input class="visually function-input" type="radio" name="product-group" value="no">
                              <span class="function-variete"></span>
                                 <span class="function-label">Нет</span>
                         </label>
@@ -165,11 +184,15 @@
                     </ul>
                 </fieldset>
 
-              <button class="button button-all" type="submit">Показать</button>
+                <div class="line_yellow">
+                  <a class="button button-all" href="#">Показать</a>
+                  <span class="line_1"></span>
+                </div>
             </form>
           </div>
           <div class="right_block">
           <form class="sorting-type">
+            <div class="label">
                <label class="sorting-title" for="sorting">сортировка:</label>
                  <select class="select-control" id="sorting" name="sorting">
                      <option value="popular">Сначала популярные</option>
@@ -177,10 +200,12 @@
                      <option value="expensive">Сначала дорогие</option>
                  </select>
                  <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+                </div>
                  <div class="arrow">
-                   <p class="arrow_top">▲</p>
-                   <p class="arrow_bottom">▼</p>
+                   <a class="arrow_top" href="#">▲</a>
+                   <a class="arrow_bottom" href="#">▼</a>
                  </div>
+                
           </form>
         <div class="product-conteiner">
            <ul class="product-list">
@@ -266,11 +291,11 @@
           <button class="button pagination-show-more" type="button">Загрузить еще</button>
             </div>
               <div class="pagination_catalog">
-                <p>
+                <div class="page-befor">
                   <a class="pagination-link pagination-prev" href="#">
                       <span class="pagination-title">назад</span>
                   </a>
-                </p>
+                </div>
               
               <ul class="pagination">
               <li class="pagination-item">
@@ -289,11 +314,11 @@
                 <a class="pagination-link" href="#">15</a>
             </li>
           </ul>
-               <p>
+          <div class="page-next">
                 <a class="pagination-link pagination-next" href="#">
                     <span class="pagination-title">вперёд</span>
                 </a>
-              </p>
+          </div>
         </div>
       </div>
       </div>
@@ -306,7 +331,7 @@
         <div class="wrapper">
         <div class="page-footer-container">
         <div class="page_footer_item">
-        <img class="logo-footer" src="image/main-page/logo-footer.svg" alt="Логотип интернет-магазин девайсов" width="145" height="36">
+        <img class="logo-footer" src="image/main-page/my-logo-footer.png" alt="Логотип интернет-магазин девайсов" width="145" height="36">
       </div>
         
         <div class="footer-adress">
@@ -333,28 +358,33 @@
   
   
       <div class="footer-social">
-        <div class="line"></div>
+        <div class="line">
+        <div class="box_line"></div>
+        </div>
   
            <ul class="footer-social-ul-list">
               <li class="footer-social-list">
-                <a class="button" href="https://www.facebook.com/htmlacademy"><img src="image/main-page/facebook.png" width="40" 
-                  height="40" alt="Фейсбук">
+                <a class="button" href="https://www.facebook.com/htmlacademy">
+                  <i class="fa fa-fw fa-facebook" aria-hidden="true"></i>
                 </a>
               </li>
               <li class="footer-social-list">
-                <a class="button" href="https://www.instagram.com/htmlacademy/"><img src="image/main-page/instagram.png" width="40" 
-                  height="40" alt="Инстаграм">
+                <a class="button" href="https://www.instagram.com/htmlacademy/">
+                  <i class="fa fa-fw fa-instagram" aria-hidden="true"></i>
                 </a>
               </li>
               <li class="footer-social-list">
-                <a class="button" href="https://twitter.com/htmlacademy_ru"><img src="image/main-page/twitter.png" width="40" 
-                  height="40" alt="Твиттер">
+                <a class="button" href="https://twitter.com/htmlacademy_ru">
+                  <i class="fa fa-fw fa-twitter" aria-hidden="true"></i>
                 </a>
               </li>
             </ul>
-            <div class="footer_logo"><img class="developer-logo" src="image/main-page/developer-logo.svg" alt="Разработчик" width="115" 
+            <a class="footer_logo" href="https://htmlacademy.ru/">
+              <span class="logo-page">
+              <img class="developer-logo" src="image/main-page/logo-footer.png" alt="Разработчик" width="115" 
               height="33">
-            </div>
+            </span>
+          </a>
       </div>
     </div>
   </div>
