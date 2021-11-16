@@ -15,10 +15,10 @@
           <li class="navigation-item find-open">
             <form>
               <label>
-              <img src="image/main-page/search.svg" width="16" 
-              height="16" alt="поиск">
-              <input class="navigation-search" type="text" placeholder="Поиск по сайту">
-            </label>
+                <img src="image/main-page/search.svg" width="16" 
+                height="16" alt="поиск">
+                <input class="navigation-search" type="text" placeholder="Поиск по сайту">
+              </label>
               <button class="find" type="submit">Найти</button>
             </form>
           </li>
@@ -43,7 +43,7 @@
                     <ul class="cart-items-list">
                       <li class="cart-item">
                          <a class="open-cart" href="#">
-                           <img src="image/main-page/product-1-small.png" width="41px" height="43px">
+                           <img src="image/main-page/product-1-small.png" width="41" height="43" alt="монопод">
                            <p class="name-item-popover">Любительская селфи-палка</p>
                          </a>
                          <button class="popover-close-button"><span class="closed">+</span>
@@ -51,10 +51,10 @@
                       </li>
                       <li class="cart-item">
                         <a class="open-cart" href="#">
-                          <img src="image/main-page/product-2-small.png" width="41px" height="43px">
+                          <img src="image/main-page/product-2-small.png" width="41" height="43" alt="Монопод для селфи">
                           <p class="name-item-popover">Профессиональная<br>селфи-палка</p>
                         </a>
-                        <button class="popover-close-button"><span class="closed">+</span>
+                        <button class="popover-close-two"><span class="closed">+</span>
                         </button>
                      </li>
                     </ul>
@@ -570,5 +570,60 @@
   </div>
 </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <img class="put-closed" src="image/main-page/closed.png" width="26" height="26" alt="кнопка">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+           <div class="item">
+            <p class="field-group">
+              <title class="field-name">Персональные данные</title>
+              <label class="field-id" for="auth-name">Ваше имя:</label>
+              <input class="auth-form-field field" type="text" id="auth-name" 
+              name="auth-name" placeholder="Имя Фамилия">
+              <img class="people" src="image/main-page/people.png" width="13" height="12" alt="фигурка">
+              <span class="sign">Пожалуйста, представьтесь</span>
+            </p>
+            <p class="field-group adress-mail">
+              <title class="field-post">Почта</title>
+              <label class="field-mail" for="auth-mail">Ваш e-mail:</label>
+              <input class="auth-form-field field-adres" type="text" id="auth-mail" name="auth-mail"
+               placeholder="krasotka92@mail.ru">
+               <img  class="post" src="image/main-page/post.png" width="15" height="12" alt="конверт">
+              <span class="sign-1">Забавный у вас адрес</span>
+            </p>
+          </div>
+          <div class="item">
+            <p class="field-group free">
+              <title class="field-free">Информация о доставке</title>
+              <label class="field-mail" for="auth-info-free">Что нужно привезти:</label>
+              <input class="auth-form-field field" type="text" id="auth-info-free" name="auth-info-free" 
+              placeholder="В свободной форме">
+            </p>
+            <p class="field-group quantity">
+              <title class="field-free">Количество</title>
+              <label class="field-mail" for="auth-quantity">Количество:
+                <span class="info-order">i<span class="modal-delta"></span><span class="black-field">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям 
+                  к провозу багажа.</span></span>
+              </label>
+            <label class="figur">
+              <button class="minus-field">-</button>
+              <input class="auth-form-field field-2" type="text" value="1">
+              <button class="plus-field">+</button>
+            </label>
+            </p>
+          </div>
+          <div class="send-yellow">
+        <button class="auth-form-button" type="submit">Отправить</button>
+        <span class="line-form"></span>
+      </div>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>

@@ -15,10 +15,10 @@
           <li class="navigation-item find-open">
             <form>
               <label>
-              <img src="image/main-page/search.svg" width="16" 
-              height="16" alt="поиск">
-              <input class="navigation-search" type="text" placeholder="Поиск по сайту">
-            </label>
+                <img src="image/main-page/search.svg" width="16" 
+                height="16" alt="поиск">
+                <input class="navigation-search" type="text" placeholder="Поиск по сайту">
+              </label>
               <button class="find" type="submit">Найти</button>
             </form>
           </li>
@@ -39,25 +39,68 @@
                 <span class="around">2</span>
                 <img src="image/main-page/basket.svg" width="16" 
                 height="14" alt="корзина с товарами">Корзина</a>
+                  
+                    <div class="popover popover-cart">
+                      <div class="delta"></div>
+                      <h2 class="visually-hidden">Корзина</h2>
+                      <div class="popover-content">
+                      <ul class="cart-items-list">
+                        <li class="cart-item">
+                           <a class="open-cart" href="#">
+                             <img src="image/main-page/product-1-small.png" width="41" height="43" alt="монопод">
+                             <p class="name-item-popover">Любительская селфи-палка</p>
+                           </a>
+                           <button class="popover-close-button"><span class="closed">+</span>
+                           </button>
+                        </li>
+                        <li class="cart-item">
+                          <a class="open-cart" href="#">
+                            <img src="image/main-page/product-2-small.png" width="41" height="43" alt="селфи-палка">
+                            <p class="name-item-popover">Профессиональная<br>селфи-палка</p>
+                          </a>
+                          <button class="popover-close-two"><span class="closed">+</span>
+                          </button>
+                       </li>
+                      </ul>
+                  </div>
+                  <div class="result">
+                    <span class="product-result">Товаров: 2</span>
+                    <span class="costs-result">Сумма: 2000 ₽</span>
+                  </div>
+                  <button class="popover-button">открыть корзину</button>
+                </div>
+  
             </li>
           </ul>
           <ul class="navigation-list">
             <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">
-             <span> Каталог товаров</span>
-              <span class="plus">+</span>
-              <span class="minus">−</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link top-list" href="delivery.html">Доставка</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link top-list" href="guarantee.html">Гарантия</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link top-list" href="contacts.html">Контакты</a>
-          </li>
+              <a class="navigation-link" href="#">
+                <span> Каталог товаров</span>
+                <span class="plus">+</span>
+                <span class="minus">−</span>
+              </a>
+              <ul class="sub_fon_yellow">
+                <li>
+              <ul class="subcatalog">
+                <li><a href="#" class="submenu"><span>Виртуальная реальность</span></a></li>
+                <li><a href="catalog.html" class="submenu"><span>Моноподы для селфи</span></a></li>
+                <li><a href="#" class="submenu"><span>Экшн-камеры</span></a></li>
+                <li><a href="#" class="submenu"><span>Фитнес-браслеты</span></a></li>
+                <li><a href="#" class="submenu"><span>Умные часы</span></a></li>
+                <li><a href="#" class="submenu"><span>Квадрокоптеры</span></a></li>
+              </ul>
+            </li>
+            </ul>
+            </li>
+            <li class="navigation-item deliv-product">
+              <a class="navigation-link top-list" href="delivery.html">Доставка</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link top-list" href="guarantee.html">Гарантия</a>
+            </li>
+            <li class="navigation-item add">
+              <a class="navigation-link top-list" href="contacts.html">Контакты</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -121,7 +164,7 @@
                       <li class="catalog-filter-item">
                        <label class="color">
                           <input class="visually color-input" type="checkbox" name="black" checked>
-                            <span class="color-variete"></span>
+                            
                                <span class="color-label">Черный</span>
                        </label>
                       </li>
@@ -129,7 +172,7 @@
                       <li class="catalog-filter-item">
                         <label class="color">
                            <input class="visually color-input" type="checkbox" name="white" checked>
-                             <span class="color-variete"></span>
+                             
                                 <span class="color-label">Белый</span>
                         </label>
                        </li>
@@ -137,7 +180,7 @@
                        <li class="catalog-filter-item">
                         <label class="color">
                            <input class="visually color-input" type="checkbox" name="blue">
-                             <span class="color-variete"></span>
+                             
                                 <span class="color-label">Синий</span>
                         </label>
                        </li>
@@ -145,7 +188,7 @@
                        <li class="catalog-filter-item">
                         <label class="color">
                            <input class="visually color-input" type="checkbox" name="red">
-                             <span class="color-variete"></span>
+                             
                                 <span class="color-label">Красный</span>
                         </label>
                        </li>
@@ -153,7 +196,7 @@
                        <li class="catalog-filter-item">
                         <label class="color">
                            <input class="visually color-input" type="checkbox" name="pink">
-                             <span class="color-variete"></span>
+                             
                                 <span class="color-label">Розовый</span>
                         </label>
                        </li>
@@ -162,23 +205,17 @@
 
                 <fieldset class="catalod-filter-group">
                     <span class="catalod-filter-title">Bluetooth</span>
-                    <ul class="catalog-filter-list"> 
-                      <li class="catalog-filter-item">
-                        <label class="function">
-                           <input class="visually function-input" type="radio" name="product-group" value="yes" checked>
-                             <span class="function-variete"></span>
-                                <span class="function-label">Есть</span>
-                        </label>
-                      </li>
-
-                      <li class="catalog-filter-item">
-                        <label class="function">
-                           <input class="visually function-input" type="radio" name="product-group" value="no">
-                             <span class="function-variete"></span>
-                                <span class="function-label">Нет</span>
-                        </label>
-                      </li>
-                    </ul>
+                  
+                    <div class="radio">
+                      <input class="custom-radio" type="radio" id="bool-1" name="bool" value="yes">
+                      <label for="bool-1">Есть</label>
+                    </div>
+                  
+                    <div class="radio">
+                      <input class="custom-radio" type="radio" id="bool-2" name="bool" value="no">
+                      <label for="bool-2">Нет</label>
+                    </div>
+                    
                 </fieldset>
 
                 <div class="line_yellow_prev">
@@ -385,5 +422,60 @@
     </div>
   </div>
       </footer>
+      <div class="modal-container">
+        <div class="modal modal-auth">
+          <button class="modal-close-button">
+            <img class="put-closed" src="image/main-page/closed.png" width="26" height="26">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Доставка под заказ</h2>
+            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+             <div class="item">
+              <p class="field-group">
+                <title class="field-name">Персональные данные</title>
+                <label class="field-id" for="auth-name">Ваше имя:</label>
+                <input class="auth-form-field field" type="text" id="auth-name" 
+                name="auth-name" placeholder="Имя Фамилия">
+                <img class="people" src="image/main-page/people.png" width="13" height="12" alt="фигурка">
+                <span class="sign">Пожалуйста, представьтесь</span>
+              </p>
+              <p class="field-group adress-mail">
+                <title class="field-post">Почта</title>
+                <label class="field-mail" for="auth-mail">Ваш e-mail:</label>
+                <input class="auth-form-field field-adres" type="text" id="auth-mail" name="auth-mail"
+                 placeholder="krasotka92@mail.ru">
+                 <img  class="post" src="image/main-page/post.png" width="15" height="12" alt="конверт">
+                <span class="sign-1">Забавный у вас адрес</span>
+              </p>
+            </div>
+            <div class="item">
+              <p class="field-group free">
+                <title class="field-free">Информация о доставке</title>
+                <label class="field-mail" for="auth-info-free">Что нужно привезти:</label>
+                <input class="auth-form-field field" type="text" id="auth-info-free" name="auth-info-free" 
+                placeholder="В свободной форме">
+              </p>
+              <p class="field-group quantity">
+                <title class="field-free">Количество</title>
+                <label class="field-mail" for="auth-quantity">Количество:
+                  <span class="info-order">i<span class="modal-delta"></span><span class="black-field">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям 
+                    к провозу багажа.</span></span>
+                </label>
+              <label class="figur">
+                <button class="minus-field">-</button>
+                <input class="auth-form-field field-2" type="text" value="1">
+                <button class="plus-field">+</button>
+              </label>
+              </p>
+            </div>
+            <div class="send-yellow">
+          <button class="auth-form-button" type="submit">Отправить</button>
+          <span class="line-form"></span>
+        </div>
+            </form>
+          </section>
+        </div>
+      </div>
   </body>
 </html>
